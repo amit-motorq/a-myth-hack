@@ -2,6 +2,7 @@ name: Test Action
 
 on: 
   workflow_dispatch:
+    input:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
